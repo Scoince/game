@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Writing Board</title>
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" defer></script>
+    <script type="module" src="./src/js/app.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Air Writing Board</h1>
+        <p>Draw on top of your webcam feed with mouse/touch or optional hand tracking.</p>
+      </header>
+
+      <section class="toolbar" aria-label="Drawing controls">
+        <label class="control">
+          <span>Color</span>
+          <input type="color" id="colorPicker" value="#ffe447" />
+        </label>
+
+        <label class="control">
+          <span>Brush</span>
+          <input type="range" id="brushSize" min="2" max="30" value="7" />
+        </label>
+
+        <button id="drawModeBtn" class="btn btn--active">Draw</button>
+        <button id="eraseModeBtn" class="btn">Erase</button>
+        <button id="clearBtn" class="btn">Clear</button>
+        <button id="downloadBtn" class="btn">Download</button>
+
+        <label class="control control--inline">
+          <input type="checkbox" id="handTrackingToggle" />
+          <span>Hand Tracking</span>
+        </label>
+      </section>
+
+      <section class="stage-wrap">
+        <div class="stage" id="stage">
+          <video id="cameraFeed" playsinline autoplay muted></video>
+          <canvas id="drawLayer"></canvas>
+        </div>
+      </section>
+
+      <p class="status" id="statusText">Initializing camera…</p>
+    </main>
+  </body>
+</html>

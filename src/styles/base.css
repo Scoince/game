@@ -1,0 +1,33 @@
+:root {
+  --bg: #0f1221;
+  --panel: #171a2d;
+  --text: #edf2ff;
+  --muted: #a9b4d0;
+  --accent: #6fa7ff;
+  --border: #2b3152;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top, #1b2140 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app__header h1 {
+  margin: 0;
+}
+
+.app__header p {
+  color: var(--muted);
+}
