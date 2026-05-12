@@ -7,6 +7,75 @@
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">⚡ NE Impact AI</div>
+      <nav>
+        <a class="active">Chat Assistant</a>
+        <a>Recent Itineraries</a>
+        <a>Map Explorer</a>
+        <a>Culture Library</a>
+        <a>Safety Center</a>
+      </nav>
+      <div class="help-card">
+        <h4>Need Safety Help?</h4>
+        <p>Quick access to local police and medical contacts.</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h1>Manipur Smart Travel Console</h1>
+        <div class="top-actions">
+          <button>🌐 Meitei / English</button>
+          <button class="primary">+ New Query</button>
+        </div>
+      </header>
+
+      <section class="stats">
+        <div class="stat"><h3>Places</h3><p>156</p><span>Curated POIs</span></div>
+        <div class="stat"><h3>Cultural Notes</h3><p>2,482</p><span>Tips & articles</span></div>
+        <div class="stat"><h3>Active Agents</h3><p>6</p><span>Planner, route, culture...</span></div>
+        <div class="stat"><h3>Orchestrator Health</h3><p>99.9%</p><span>Uptime (30d)</span></div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="panel">
+          <h2>AI Chat Preview</h2>
+          <div class="chat">
+            <div class="bubble ai">Khurumjari! I can plan your Manipur day-trip with culture + safety.</div>
+            <div class="bubble user">Plan Imphal → Loktak with food and local phrases.</div>
+            <div class="bubble ai">Done. I added Kangla Fort, Ima Keithel, Loktak, safety checks, and phrases.</div>
+          </div>
+          <div class="quick-actions">
+            <button class="primary">Get Full Itinerary</button>
+            <button>Best time for Loktak</button>
+            <button>Kangla history</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>Places Explorer</h2>
+          <div class="place-list">
+            <div><strong>Loktak Lake</strong><span>Nature • 1.2km</span></div>
+            <div><strong>Kangla Fort</strong><span>History • 4.5km</span></div>
+            <div><strong>Ima Keithel</strong><span>Culture • 5.0km</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="iframes">
+        <article class="panel">
+          <h2>Meitei Mayek Resource</h2>
+          <iframe src="https://www.meiteimayek.com/#contact-us" title="Meitei Mayek"></iframe>
+        </article>
+        <article class="panel">
+          <h2>AI4Bharat TTS</h2>
+          <iframe src="https://models.ai4bharat.org/#/tts" title="AI4Bharat TTS"></iframe>
+        </article>
+      </section>
+    </main>
+  </div>
   <main class="container">
     <h1>Northeast Region Impact Agent</h1>
     <p>Smart Tourism and Cultural Assistant — demo dashboard.</p>
