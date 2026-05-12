@@ -27,3 +27,8 @@ uvicorn main:app --reload
 - `POST /demo/trace` for full orchestrator debug output (intent + per-agent outputs).
 
 - `POST /geo/context` with `{ "lat": 24.8170, "lng": 93.9368 }` to get nearest known place + culture/safety context (useful for Manipur/Imphal geo lookups).
+
+
+## NVIDIA LLM Setup
+Use NVIDIA-compatible OpenAI chat endpoint with model choices like `deepseek-ai/deepseek-r1` or `google/gemma-2-9b-it`.
+Set env: `NVIDIA_API_KEY`, `LLM_BASE_URL`, `LLM_MODEL`.

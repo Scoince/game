@@ -15,6 +15,10 @@ except Exception:  # optional dependency in offline/demo mode
 class LLMClient:
     def __init__(self) -> None:
         self.client = None
+        # Prefer NVIDIA API key; fallback to OpenAI key for compatibility.
+        api_key = settings.nvidia_api_key or settings.openai_api_key
+        if OpenAI and api_key:
+            self.client = OpenAI(api_key=api_key, base_url=settings.llm_base_url)
         if OpenAI and settings.openai_api_key:
             self.client = OpenAI(api_key=settings.openai_api_key)
 
@@ -70,6 +74,7 @@ class LLMClient:
         )
         try:
             resp = self.client.chat.completions.create(
+                model=settings.llm_model,
                 model="gpt-4o-mini",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0,
@@ -85,6 +90,7 @@ class LLMClient:
             return "LLM unavailable in local mode."
         try:
             resp = self.client.chat.completions.create(
+                model=settings.llm_model,
                 model="gpt-4o-mini",
                 messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
                 temperature=0.4,
