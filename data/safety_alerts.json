@@ -1,0 +1,5 @@
+[
+  {"id":"SA001","state":"Meghalaya","area":"Cherrapunji-Shillong Highway","type":"landslide","severity":"high","message":"Possible landslide risk on NH-6. Travel in daylight.","active":true,"date":"2025-01-15"},
+  {"id":"SA003","state":"Manipur","area":"NH-39","type":"road_closure","severity":"high","message":"Road closure reported on NH-39 stretch.","active":true,"date":"2025-01-16"},
+  {"id":"SA006","state":"Manipur","area":"Loktak route","type":"fog","severity":"low","message":"Early morning fog reported near Loktak access road.","active":true,"date":"2025-01-17"}
+]
