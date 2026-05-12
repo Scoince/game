@@ -1,0 +1,26 @@
+{
+  "Meghalaya": {
+    "general": ["Khasi matrilineal traditions are central.", "Local councils shape community decisions."],
+    "food": ["Try jadoh.", "Smoked pork and bamboo shoot dishes are common."],
+    "festivals": ["Shad Suk Mynsiem is notable."],
+    "etiquette": ["Ask before photographing people."]
+  },
+  "Manipur": {
+    "general": ["Meitei culture blends dance, martial traditions, and Vaishnav influences.", "Polo (Sagol Kangjei) traces roots to Manipur."],
+    "food": ["Try eromba, singju, and chamthong.", "Ima Keithel area has local snacks and tea stalls."],
+    "festivals": ["Yaoshang is major.", "Lai Haraoba celebrates indigenous deities and traditions."],
+    "etiquette": ["Dress modestly at sacred sites.", "Ask consent before taking portraits in markets and villages."]
+  },
+  "Assam": {
+    "general": ["Bihu festivals shape cultural life."],
+    "food": ["Try Assamese thali."],
+    "festivals": ["Rongali Bihu is popular."],
+    "etiquette": ["Remove shoes at religious places."]
+  },
+  "Nagaland": {
+    "general": ["Distinct tribal traditions across communities."],
+    "food": ["Try smoked pork dishes."],
+    "festivals": ["Hornbill Festival is famous."],
+    "etiquette": ["Ask before entering village homes."]
+  }
+}

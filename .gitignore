@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build/package artifacts
+*.zip
+*.tar.gz
+*.7z
+
+# Optional local assets
+static/flowchart.png
