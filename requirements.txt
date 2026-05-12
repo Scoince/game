@@ -1,0 +1,8 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+python-dotenv==1.1.0
+openai==1.79.0
+python-telegram-bot==21.11.1
+pydantic==2.11.4
+deep-translator==1.11.4
+httpx==0.28.1

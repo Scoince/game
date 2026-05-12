@@ -1,0 +1,29 @@
+{
+  "Meghalaya": {
+    "Shillong": [
+      {"name": "Ward's Lake", "type": "nature", "lat": 25.5788, "lng": 91.8833, "description": "Scenic lake in central Shillong.", "visit_duration_min": 45, "entry_fee": "INR 20", "tags": ["nature", "relax"]},
+      {"name": "Don Bosco Museum", "type": "museum", "lat": 25.5792, "lng": 91.8931, "description": "Museum of Northeast cultures.", "visit_duration_min": 90, "entry_fee": "INR 100", "tags": ["culture", "heritage"]}
+    ],
+    "Cherrapunji": [
+      {"name": "Nohkalikai Falls", "type": "nature", "lat": 25.2852, "lng": 91.6968, "description": "Iconic high waterfall near Cherrapunji.", "visit_duration_min": 60, "entry_fee": "INR 50", "tags": ["nature", "scenic"]}
+    ]
+  },
+  "Manipur": {
+    "Imphal": [
+      {"name": "Kangla Fort", "type": "heritage", "lat": 24.807, "lng": 93.942, "description": "Historic citadel and spiritual center of old Manipur kingdom.", "visit_duration_min": 90, "entry_fee": "INR 20", "tags": ["culture", "heritage", "history"]},
+      {"name": "Ima Keithel", "type": "market", "lat": 24.808, "lng": 93.944, "description": "Famous all-women market with textiles and local food.", "visit_duration_min": 60, "entry_fee": "Free", "tags": ["culture", "shopping", "food"]},
+      {"name": "Manipur State Museum", "type": "museum", "lat": 24.7992, "lng": 93.9459, "description": "Artifacts of Meitei heritage, tribal culture, and history.", "visit_duration_min": 60, "entry_fee": "INR 30", "tags": ["culture", "museum", "heritage"]},
+      {"name": "Loktak Lake (Sendra)", "type": "nature", "lat": 24.4978, "lng": 93.7851, "description": "Largest freshwater lake with phumdis and scenic viewpoints.", "visit_duration_min": 120, "entry_fee": "INR 50", "tags": ["nature", "scenic", "boat"]}
+    ]
+  },
+  "Assam": {
+    "Guwahati": [
+      {"name": "Kamakhya Temple", "type": "temple", "lat": 26.1665, "lng": 91.7051, "description": "Prominent Shakti temple.", "visit_duration_min": 90, "entry_fee": "Free", "tags": ["temple", "heritage"]}
+    ]
+  },
+  "Nagaland": {
+    "Kohima": [
+      {"name": "Kohima War Cemetery", "type": "heritage", "lat": 25.6747, "lng": 94.1109, "description": "Historic WWII memorial.", "visit_duration_min": 60, "entry_fee": "Free", "tags": ["heritage", "culture"]}
+    ]
+  }
+}
