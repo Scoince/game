@@ -26,6 +26,7 @@ NVIDIA_API_KEY=your_nvidia_api_key
 LLM_BASE_URL=https://integrate.api.nvidia.com/v1
 LLM_MODEL=deepseek-ai/deepseek-r1
 # Alternative: LLM_MODEL=google/gemma-2-9b-it
+OPENAI_API_KEY=your_openai_key
 TELEGRAM_BOT_TOKEN=your_telegram_token
 GOOGLE_MAPS_API_KEY=optional_maps_key
 APP_HOST=0.0.0.0

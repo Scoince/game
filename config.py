@@ -22,6 +22,7 @@ class Settings:
     # legacy compatibility
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
 
+    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
     telegram_bot_token: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
     google_maps_api_key: str = os.getenv("GOOGLE_MAPS_API_KEY", "")
     app_host: str = os.getenv("APP_HOST", "0.0.0.0")

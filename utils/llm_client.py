@@ -19,6 +19,8 @@ class LLMClient:
         api_key = settings.nvidia_api_key or settings.openai_api_key
         if OpenAI and api_key:
             self.client = OpenAI(api_key=api_key, base_url=settings.llm_base_url)
+        if OpenAI and settings.openai_api_key:
+            self.client = OpenAI(api_key=settings.openai_api_key)
 
     def _fallback_intent(self, message: str) -> dict[str, Any]:
         text = (message or "").lower()
@@ -73,6 +75,7 @@ class LLMClient:
         try:
             resp = self.client.chat.completions.create(
                 model=settings.llm_model,
+                model="gpt-4o-mini",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0,
             )
@@ -88,6 +91,7 @@ class LLMClient:
         try:
             resp = self.client.chat.completions.create(
                 model=settings.llm_model,
+                model="gpt-4o-mini",
                 messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
                 temperature=0.4,
             )
